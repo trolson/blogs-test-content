@@ -1,0 +1,25 @@
+#article_post {
+    padding: 0px;
+}
+#article_post h1 {
+    font-size:2.125rem;
+    line-height:2rem;
+    color:#71757f;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight:normal;
+    margin-top:0px;
+}
+.formelement {
+    margin-bottom:15px;
+    clear:both;
+}
+.formelement label {
+    float:left;
+    width:100px;
+}
+.formelement input, .formelement textarea {
+    float:left;
+    margin-left:15px;
+    font-size:.875rem;
+    padding:5px;
+}

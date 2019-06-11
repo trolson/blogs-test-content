@@ -1,0 +1,1145 @@
+/*Theme Name: Cisco Responsive
+Theme URI: http://blogs.cisco.com
+Description: Cisco Blogs
+Version: 1.0
+Author: Rob Kristie
+Author URI: Blogs.cisco.com
+Tags: None
+*/
+tr.user-profile-picture {
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "CiscoSansTTBold";
+    src: url('fonts/CiscoSansTTBold.eot');
+    src: url('fonts/CiscoSansTTBold.woff'), url('fonts/CiscoSansBold.otf'), url('fonts/CiscoSansTTBold.ttf');
+}
+@font-face {
+    font-family: "CiscoSansTTRegular";
+    src: url('fonts/CiscoSansTTRegular.eot');
+    src: url('fonts/CiscoSansTTRegular.woff'), url('fonts/CiscoSansRegular.otf'), url('fonts/CiscoSansTTRegular.ttf');
+}
+@font-face {
+    font-family: "CiscoSansTT";
+    src: url('fonts/CiscoSansTTRegular.eot');
+    src: url('fonts/CiscoSansTTRegular.woff'), url('fonts/CiscoSansRegular.otf'), url('fonts/CiscoSansTTRegular.ttf');
+}
+@font-face {
+    font-family: "CiscoSansTTLight";
+    src: url('fonts/CiscoSansTTLight.eot');
+    src: url('fonts/CiscoSansTTLight.woff'), url('fonts/CiscoSansLight.otf'), url('fonts/CiscoSansTTLight.ttf');
+}
+@font-face {
+    font-family: "CiscoSansTTExtraLight";
+    src: url('fonts/CiscoSansTTExtraLight.eot');
+    src: url('fonts/CiscoSansTTExtraLight.woff'), url('fonts/CiscoSansExtraLight.otf'), url('fonts/CiscoSansTTExtraLight.ttf');
+}
+@font-face {
+    font-family: "CiscoSansTTRegularOblique";
+    src: url('fonts/CiscoSansTTRegularOblique.eot');
+    src: url('fonts/CiscoSansTTRegularOblique.woff'), url('fonts/CiscoSansRegularOblique.otf'), url('fonts/CiscoSansTTRegularOblique.ttf');
+}
+.clear {
+    clear: both;
+}
+html {
+    font-family: 'CiscoSansTTLight',sans-serif;
+}
+body {
+    font-size: 0;
+}
+#sb-site, .sb-slidebar, footer {
+    font-size: 0.875rem;
+}
+header {
+    position: fixed;
+    width: 100%;
+    max-width: 1500px;
+    background-color: #fff;
+    z-index: 99;
+    top: 0;
+    -webkit-box-shadow: 0px 5px 5px -1px rgba(50, 50, 50, 0.48);
+    -moz-box-shadow: 0px 5px 5px -1px rgba(50, 50, 50, 0.48);
+    box-shadow: 0px 5px 5px -1px rgba(50, 50, 50, 0.48);
+}
+#hero {
+    max-width: 1004px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+/* changed */
+a {
+    text-decoration: none;
+    color: #007493;
+}
+#hamburger {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #049fd9;
+    float: left;
+    margin: 10px;
+}
+#hamburger i {
+    color: #fff;
+    font-size: 1.2em;
+    margin-left: .4125em;
+    margin-top: .3775em;
+}
+#cisco_logo {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.logo_hover {
+    background-image: url(img/cisco.png);
+    width: 80px;
+    height: 50px;
+    background-size: 80px 50px;
+    background-repeat: no-repeat;
+}
+.dropdown:hover .logo_hover {
+    background-image: url(img/cisco_hover.png);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ecf9ff;
+    width: 70px;
+    padding: 10px 5px 8px 5px;
+    z-index: 1;
+    font-size: 11px;
+}
+.dropdown-content ul {
+    list-style: none;
+}
+.dropdown-content ul li {
+    margin-bottom: 8px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.hero_header_text {
+    font-family: 'CiscoSansTTExtraLight',"HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    float: left;
+    font-size: 1.5em;
+    margin-left: 34px;
+    margin-top: 15px;
+    color: #0096d5;
+}
+#mobile_search_top {
+    float: right;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #dbdbdb;
+    color: #fff;
+    margin: 10px;
+}
+#mobile_search_top i {
+    margin-left: .55em;
+    margin-top: .45em;
+}
+#mobile_search {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+#mobile_search_box {
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border: 0px ;
+    margin: .5em;
+    padding: .25em;
+    background-color: #dbdbdb;
+    box-sizing: border-box;
+}
+#mobile_search_box form input[type="text"] {
+    background-color: #dbdbdb;
+    margin-left: .5em;
+    padding: .2em;
+    width: 90%;
+    border: none;
+    box-sizing: border-box;
+}
+#mobile_search_box form input[type="submit"] {
+    display: none;
+}
+.top_third {
+    float: left;
+}
+#normal_search {
+    display: none;
+}
+a.top_login {
+    display: none;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 10000;
+    display: block;
+}
+.sb-slidebar {
+    padding-top: 30px;
+}
+.sb-slidebar nav ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+.sb-slidebar nav ul ul {
+    display: none;
+}
+.sb-slidebar nav li {
+    position: relative;
+    font-size: .85rem;
+    border-bottom: 1px solid #0087c0;
+    padding: 15px;
+    font-family: 'CiscoSansTTBold',"HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+.sb-slidebar nav li.sub {
+    position: relative;
+    font-size: .85rem;
+    padding: 15px;
+    font-family: 'CiscoSansTTBold',"HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    margin-left: 10px;
+}
+.sb-slidebar nav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.sb-slidebar nav li ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'CiscoSansTTRegular',"HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+.sb-slidebar nav li ul li {
+    border-bottom: none;
+}
+.sb-slidebar a.hamburger_login {
+    margin-left: 15px;
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 16px;
+    font-family: CiscoSansTTRegular,sans-serif;
+    color: #ffffff;
+    font-size: .75em;
+    padding: 8px 22px 8px 22px;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+span.sub_main {
+    font-family: "CiscoSansTTBold","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    color: #fff;
+}
+#normal_menu {
+    display: none;
+}
+#slider {
+    margin-top: 50px;
+}
+
+footer {
+    width: 100%;
+    padding: 15px 10px 25px 10px;
+    background-color: #8e9299;
+    color: #fff;
+    font-size: .714rem;
+}
+ul#footer_social {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+ul#footer_social li {
+    margin-right: 10px;
+    float: left;
+}
+ul#footer_social li.footer_social_title {
+    padding-top: 5px;
+}
+ul#footer_social li a {
+    width: 25px;
+    height: 25px;
+}
+ul#footer_social li a img {
+    width: 25px;
+    height: 25px;
+}
+#footer_content {
+    max-width: 1004px;
+    margin: 0 auto;
+}
+footer p {
+    font-size: .625rem;
+    line-height: 1rem;
+}
+footer a {
+    color: #fff;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+}
+@media only screen and (max-width: 599px) {
+    .hero_header_text {
+        display:none;
+    }
+    .top_third {
+        width: 33%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #mobile_search_top {
+        display: none;
+    }
+    #normal_search i {
+        margin-top: .45em;
+        float: left;
+        color: #fff;
+    }
+    #normal_search {
+        display: block;
+        float: right;
+        width: 12em;
+        height: 2em;
+        border-radius: 1em;
+        background-color: #dbdbdb;
+        margin: 10px;
+        margin-bottom: 0;
+    }
+    #normal_search form {
+        width: 10em;
+        margin-top: .25em;
+        float: left;
+    }
+    #normal_search form input[type="text"] {
+        background-color: #dbdbdb;
+        margin-left: .5em;
+        padding: .2em;
+        width: 9em;
+        border: none;
+        box-sizing: border-box;
+    }
+    #normal_search form input[type="submit"] {
+        display: none;
+    }
+    a.top_login {
+        margin: 10px;
+        margin-right: 0px;
+        float: right;
+        display: none;
+        -webkit-border-radius: 26;
+        -moz-border-radius: 26;
+        border-radius: 26px;
+        font-family: "CiscoSansTTRegular",sans-serif;
+        color: white;
+        background: #0d98be;
+        padding: 8px 20px 8px 20px;
+        text-decoration: none;
+        font-size: .875em;
+    }
+}
+a.top_login:hover, input.subscribe_button:hover, .carousel_content a.read_more:hover, a.post_tags:hover {
+    background-color: #1897d3;
+    color: #fff;
+}
+@media only screen and (min-width: 960px) {
+    #hero {
+        padding:0 10px;
+        height: 104px;
+    }
+    #hamburger {
+        display: none;
+    }
+    #normal_menu {
+        display: block;
+    }
+    #normal_menu ul {
+        text-align: left;
+        display: inline;
+        margin: 0;
+        padding: 0px 4px 17px 0;
+        list-style: none;
+    }
+    #normal_menu .hamburger_login {
+        display: none;
+    }
+    #normal_menu ul li {
+        font: 13px/18px "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+        display: inline-block;
+        margin-right: -4px;
+        position: relative;
+        padding: 15px 20px;
+        background: #fff;
+        cursor: pointer;
+    }
+    #normal_menu ul a {
+        color: #71757f;
+        display: block;
+    }
+    #normal_menu ul li a:hover , #normal_menu ul li ul li:hover a {
+        color: #0072a3;
+    }
+    #normal_menu ul li.sub {
+        padding-left: 35px;
+        padding-top: -5px;
+    }
+    #normal_menu .topactive {
+        border-bottom: 3px solid #0096d6;
+        font-family: "CiscoSansTTBold","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    }
+    #normal_menu ul li ul {
+        border-top: 3px solid #0096d6;
+        padding: 0;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transiton: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        -ms-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        -transition: opacity 0.2s;
+        width: 230px;
+        z-index: 10001;
+    }
+    #normal_menu ul li.countries ul {
+        padding: 0;
+        position: absolute;
+        top: 48px;
+        left: -257px;
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transiton: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        -ms-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        -transition: opacity 0.2s;
+        width: 420px;
+        height: 310px;
+        background: #fff;
+        padding-top: 15px;
+    }
+    #normal_menu ul li.technologies ul {
+        padding: 0;
+        position: absolute;
+        top: 48px;
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transiton: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        -ms-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        -transition: opacity 0.2s;
+        width: 350px;
+        height: 270px;
+        padding-top: 15px;
+    }
+    #normal_menu ul li ul li {
+        font-family: "CiscoSansTTLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+        display: block;
+        background: #f5f5f5;
+        color: #333;
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    }
+    #normal_menu ul li.countries ul li {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background: none;
+        padding: 10px 8px;
+    }
+    #normal_menu ul li.technologies ul li {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background: none;
+        padding: 10px 8px;
+    }
+    #normal_menu ul li.countries ul li.sub {
+        margin-left: 15px;
+        padding: 5px 8px;
+    }
+    #normal_menu ul li.technologies ul li.sub {
+        margin-left: 15px;
+        padding: 5px 8px;
+        padding-bottom: 15px;
+    }
+    .col_1, .col_2, .col_3, .col_4, .col_5 {
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-left: 1px solid #e2e2e2;
+        height: auto;
+    }
+    span.sub_main {
+        font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+        color: #0096d5;
+    }
+    span.sub_main a {
+        color: #0096d5 !important;
+    }
+    #normal_menu ul li:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    #normal_menu ul li.countries:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        background: #f5f5f5;
+    }
+    #normal_menu ul li.technologies:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        background: #f5f5f5;
+        padding-bottom: 10px;
+    }
+}
+.img-circle {
+    border-radius: 50%;
+}
+#main_content {
+    max-width: 1004px;
+    padding: 10px;
+    margin: 0 auto;
+    padding-top: 0px;
+    margin-top: 0;
+    font-family: "CiscoSansTTLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-size: .875em;
+}
+p {
+    font-size: 1rem;
+    margin: 1.125rem 0;
+    line-height: 1.25rem;
+}
+@media only screen and (max-width: 767px) {
+    #main_left {
+        clear:both;
+    }
+}
+@media only screen and (min-width: 600px) {
+    #main_left {
+        width:100%;
+        margin-left: 10px;
+    }
+    #main_ {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #main_left {
+        width:66%;
+        float: left;
+        margin-left: 0;
+        padding-top: 0;
+    }
+    #main_right {
+        width: 31%;
+        float: left;
+        margin-left: 2%;
+    }
+}
+@media only screen and (min-width: 960px) {
+    #slider {
+        margin-top:100px;
+    }
+    #main_left {
+        width: 74%;
+        float: left;
+        padding-top: 0;
+    }
+    #main_right {
+        width: 24%;
+        float: left;
+        margin-left: 2%;
+    }
+    #cisco_logo {
+        z-index: 10001;
+    }
+    #cisco_logo:hover #logo_dropdown {
+        position: absolute;
+        z-index: 10004;
+        display: block;
+        width: 47px;
+        background: #fff;
+        border: 1px solid #0096d5;
+        font-size: 11px;
+        text-align: left;
+        padding: 5px;
+    }
+    #logo_dropdown a {
+        display: block;
+        width: 40px;
+        padding-bottom: 5px;
+    }
+}
+ul#sidebar {
+    list-style: none;
+    width: 240px;
+    margin: 0 auto;
+}
+/*changed*/
+ul#sidebar li {
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+}
+/*changed*/
+ul#sidebar h3 {
+    font-size: 20px;
+    color: #4a4a4a;
+    font-family: "CiscoSansTT","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight: 300;
+    margin-bottom: .875rem;
+    line-height: 1.27;
+}
+#rss_box {
+    display: inline-block;
+    width: 15%;
+    margin-right: 2%;
+    float: left;
+}
+a.subscribe_rss {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    background-image: url(img/rss.png);
+    border: none;
+}
+#subscribe_box {
+    display: inline-block;
+    width: 100%;
+}
+#subscribe_box form {
+    width: 100%;
+}
+/*changed*/
+#subscribe_box input.subscribe {
+    display: block;
+    width: 98%;
+    height: 23px;
+    border: 1px solid #979797;
+}
+/*changed*/
+input.subscribe_button {
+    float: right;
+    margin-top: 10px;
+    width: 130px;
+    height: 40px;
+    display: inline-block;
+    -webkit-border-radius: 26;
+    -moz-border-radius: 26;
+    border-radius: 26px;
+    border: 0;
+    font-family: "CiscoSansTTLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    color: white;
+    background: #0d98be;
+    padding: 8px 20px 8px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+}
+ul#sidebar li#blogroll {
+    border-left: 1px solid #0096d5;
+    border-right: 1px solid #0096d5;
+    border-bottom: 1px solid #0096d5;
+    width: 99%;
+}
+/*changed*/
+li#blogroll ul {
+    list-style: none;
+    font-size: .825rem;
+    padding: 10px;
+}
+li#blogroll ul li {
+    line-height: 1.5rem;
+    margin-bottom: 0px;
+}
+/*changed*/
+li#blogroll ul li.roll_heading {
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    background-color: #00bceb;
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    color: #014468;
+    font-size: 22px;
+}
+li#social_widget ul {
+    list-style: none;
+}
+/* changed */
+li#social_widget ul li {
+    display: inline-block;
+    margin-right: 3%;
+    width: 12%;
+    height: auto;
+    margin-bottom: 0;
+}
+li#social_widget ul li.last {
+    margin-right: 0;
+}
+li#social_widget ul li a {
+    display: block;
+}
+/* changed */
+li#social_widget ul li img {
+    width: 35px;
+    height: 35px;
+}
+li#archives {
+    background-color: #0096d5;
+    color: #fff;
+}
+li#archives #archive_title {
+    float: left;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-size: 1rem;
+    width: 40%;
+    line-height: 31px;
+}
+li#archives #select_content {
+    padding: 10px;
+}
+li#archives #styled_select {
+    float: left;
+    width: 60%;
+    height: 31px;
+    overflow: hidden;
+    background: url(img/select_arrow.png) no-repeat right #fff;
+    border: none;
+    color: #333;
+}
+li#archives #styled_select select {
+    background: transparent;
+    width: 110%;
+    padding: 5px;
+    font-size: 1rem;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 31px;
+    -webkit-appearance: none;
+}
+.twit_logo {
+    display: block;
+    float: right;
+    text-align: right;
+    margin-right: 5px;
+    background: url(img/bird_blue_16.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+ul#sidebar .topContainer {
+    display: none;
+    background-color: none;
+    padding: 0;
+    margin-bottom: 15px;
+    border: 1px solid #0096d5;
+    font-size: 12px;
+    width: 99%;
+}
+.twit_container {
+    background-color: #ffffff;
+    padding: 0px;
+}
+#twit_req {
+    padding: 10px;
+    color: #fff;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    background: #0d98be;
+    font-size: 1rem;
+}
+.single_tweet {
+    border-top: 1px solid #0096d5;
+    padding: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.twit_avatar {
+    width: 40px;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+.twit_content {
+    float: left;
+    width: 142px;
+    margin-left: 50px;
+    margin-top: -44px;
+}
+a.twit_realname {
+    text-decoration: none;
+    color: #000000;
+}
+a.twit_username {
+    font-size: 12px;
+    font-style: italic;
+    color: #666666;
+    text-decoration: none;
+}
+.twit_userinfo {
+    float: left;
+    /*width:125px;*/
+    margin-bottom: 5px;
+}
+.timestamp {
+    float: right;
+    text-align: right;
+    /*margin-left: 90px;*/
+    /*position: absolute;*/
+    margin-right: 12px;
+}
+.timestamp a {
+    color: #666666;
+    text-decoration: none;
+}
+.timestamp a:hover {
+    text-decoration: underline;
+    color: #0084B4;
+}
+a.twit_retwetter {
+    text-decoration: none;
+    color: #666666;
+    font-size: 11px;
+    background: url(retweet.png);
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    display: block;
+    height: 11px;
+    margin-top: 5px;
+}
+.twit_actions {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+a.twit_reply {
+    background: url(img/sprite.png) 0px 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    float: left;
+}
+a.twit_retweet {
+    background: url(img/sprite.png) -80px 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    float: left;
+    margin-left: 15px;
+}
+a.twit_favorite {
+    background: url(img/sprite.png) -32px 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    float: left;
+    margin-left: 15px;
+}
+span.twit_follow a {
+    background: url(img/follow.png);
+    display: block;
+    width: 30px;
+    height: 18px;
+    float: right;
+    /*margin-left:90px;*/
+}
+/* Hover action */
+a.twit_reply:hover {
+    background: url(img/sprite.png) -16px 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    float: left;
+}
+a.twit_retweet:hover {
+    background: url(img/sprite.png) -96px 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    float: left;
+    margin-left: 15px;
+}
+a.twit_favorite:hover {
+    background: url(img/sprite.png) -48px 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    float: left;
+    margin-left: 15px;
+}
+a#tweetPermaLink:hover {
+    text-decoration: underline;
+    color: #0084B4;
+}
+a.retweeted_icon {
+    background: url(img/sprite.png) -80px 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    float: left;
+}
+a.retweeted_icon:hover {
+    background: url(img/sprite.png) -96px 0px;
+    display: block;
+    width: 16px;
+    height: 18px;
+    float: left;
+}
+.disLoop {
+    display: none!important;
+}
+.retweet_img {
+    margin-top: 6px;
+    cursor: pointer;
+}
+.retweet_text {
+    font-size: 11px;
+    color: #999;
+}
+.rtwit {
+    color: #999 !important;
+    text-decoration: none;
+}
+.rtwit:hover {
+    color: #0084B4 !important;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 767px) {
+    ul#sidebar {
+        padding:10px;
+    }
+    ul#sidebar li {
+        width: 100%;
+    }
+    ul#sidebar li#twitter_widget {
+        display: none;
+    }
+    #rss_box {
+        display: inline-block;
+        width: 10%;
+        margin-right: 0;
+        float: left;
+    }
+    a.subscribe_rss {
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+        background-image: url(img/rss.png);
+        border: none;
+    }
+    #subscribe_box {
+        display: inline-block;
+        width: 90%;
+        float: left;
+    }
+    #subscribe_box form {
+        width: 100%;
+        text-align: right;
+    }
+    /* changed */
+    #subscribe_box input.subscribe {
+        display: inline-block;
+        width: 70%;
+        height: 24px;
+        border: 2px solid #eee;
+        vertical-align: top;
+        font-family: CiscoSansTT,sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #4a4a4a;
+    }
+    input.subscribe_button {
+        margin-top: 0;
+        display: inline-block;
+    }
+}
+.tsm-loading {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 400px;
+}
+ul#menu-bottom-menu li:before {
+    content:"| " !important;
+}
+ul#menu-bottom-menu li:first-of-type:before {
+    content:"" !important;
+}
+.carousel_read_more{
+    color: white;
+}
+a.button-one {
+    display: inline-block;
+    -webkit-border-radius: 26;
+    -moz-border-radius: 26;
+    border-radius: 26px;
+    border: 0;
+    font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    color: white!important;
+    background: #00bcea;
+    padding: 8px 20px 8px 20px;
+    text-decoration: none;
+    font-size: .875rem;
+    text-align: center;
+    margin-bottom:15px;
+    margin-left:15px;
+}
+a.button-two {
+    display: inline-block;
+    -webkit-border-radius: 26;
+    -moz-border-radius: 26;
+    border-radius: 26px;
+    border: 0;
+    font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    color: white!important;
+    background: #005073;
+    padding: 8px 27px 8px 28px;
+    text-decoration: none;
+    font-size: .875rem;
+    text-align: center;
+    margin-bottom:15px;
+    margin-left:15px;
+}
+a.button-one:hover {
+    background: #9d9d9d;
+}
+a.button-two:hover {
+    background-color: #9d9d9d;
+}
+img.widget_wearecisco_img, .widget_wearecisco_img {
+    width: 240px;
+}
+h3.widget_wearecisco_h3_one {
+    color:white!important;
+    margin-left:15px;
+    margin-top:5px;
+    margin-bottom: 5px!important;
+}
+p.widget_wearecisco_p_one {
+    font-family: "CiscoSansTTExtralight",sans-serif;
+    color:white!important;
+    margin-left:15px;
+    font-style:normal;
+    line-height:16px;
+    font-size:14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+h3.widget_wearecisco_h3_two {
+    color:#005073!important;
+    margin-left:15px;
+    margin-top:5px;
+    margin-bottom: 5px!important;
+}
+p.widget_wearecisco_p_two {
+    font-family: "CiscoSansTTExtralight",sans-serif;
+    color:#005073!important;
+    margin-left:15px;
+    font-style:normal;
+    line-height:16px;
+    font-size:16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/*changed*/
+li#nitroLoggedOut.widget {
+    padding:18px 16px;
+    background-color:#0d98be;
+    color:#fff;
+    font-family: "CiscoSansTTExtralight",sans-serif;
+    margin-bottom:15px;
+    width:87%;
+    border-radius: 15px;
+}
+.consoleTitle {
+    font-size:19px;
+    padding-bottom:18px;
+}
+.consoleTextNoLog {
+    font-size:14px;
+    line-height:16px;
+}
+.consoleTextNoLog a, .consoleTextNoLog a:visited {
+    color:#fff;
+    text-decoration:none;
+    border-bottom:1px solid #fff;
+    padding-bottom:1px;
+}
+a.joinNow , a.joinNow:visited{
+    margin: 0 auto;
+    display:block;
+    padding:8px 0;
+    text-align:center;
+    width:120px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #fff;
+    font-size:14px;
+    color:#fff;
+    text-decoration:none;
+    margin-bottom:10px;
+}
+
+li#blogroll ul li a {
+    margin-left: -1em;
+}
+li#blogroll ul li {
+    margin-left: 1em;
+}

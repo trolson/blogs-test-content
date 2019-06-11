@@ -1,0 +1,23 @@
+.spacer {
+    height: 120px;
+}
+h1.error {
+    text-align: center;
+    font-size: 150px;
+    font-family: "CiscoSansTTLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    color: #0096D5;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.table {
+    display: table;
+    margin: 0 auto;
+}
+ul.listings {
+    min-width: 500px;
+    list-style: none;
+    margin-top: 15px;
+}

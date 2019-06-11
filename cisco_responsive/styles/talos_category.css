@@ -1,0 +1,319 @@
+#blog_content.paged {
+    margin-top:20px;
+}
+#talos_main_image {
+    background-image: url(../img/talosbg.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-top:50px;
+    height:240px;
+    background-size:cover;
+    background-position:center;
+    margin-bottom:0px;
+}
+#talos_heading {
+    max-width:1004px;
+    padding:10px;
+    font-family: "CiscoSansTTLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    color:#fff;
+    text-align:center;
+    margin:0 auto;
+}
+#talos_heading h1 {
+    color:#fff;
+    font-size:1.8rem;
+}
+#talos_heading p {
+    font-size:1rem;
+    margin-top:1.3rem;
+}
+#category_content {
+    padding: 0px;
+}
+.breadcrumb {
+    font-size:.750rem;
+    margin-bottom:2rem;
+    margin-top:0;
+}
+p.breadcrumb{
+    margin-bottom:0px;
+}
+.breadcrumb a{
+    color:#71757f;
+}
+h1 {
+    font-size:1.825rem;
+    line-height:1.825rem;
+    color:#71757f;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight:normal;
+    margin-top:0px;
+    margin:.75rem 0;
+}
+ul.listings {
+    font-size:0;
+    width:100%;
+}
+ul.listings li {
+    font-size:14px;
+    vertical-align: top;
+    width:100% !important;
+    margin-bottom:50px;
+    border-bottom:1px solid #888;
+    padding-bottom:25px;
+}
+ul.listings li ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+ul.listings li ul li {
+    border-bottom:none;
+    margin-bottom:0px;
+    padding-bottom:12px;
+    list-style-type:disc;
+}
+ul.listings li .listing_image img{
+    width:100%;
+    height: auto;
+}
+ul.listings li h2, ul.listings li h2 a {
+    font-size:1.25rem;
+    line-height:1.5rem;
+    color:#71757f;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight:normal;
+    margin:.625rem 0;
+}
+.author_image {
+    float:left;
+    margin-right:10px;
+}
+.list_author {
+    float:left;
+    font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-size:.75rem;
+    padding-top:1rem;
+}
+.list_author a {
+    text-decoration: none;
+    color:#71757f;
+}
+.listing_image {
+    margin-bottom:2rem;
+}
+.list_cat {
+    font-size:.75rem;
+    color:#0096d6;
+    font-family: "CiscoSansTTBold","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+.author_image img {
+    width:40px;
+    height:40px;
+}
+a.post_link {
+    display:block;
+}
+@media only screen and (min-width: 600px){
+    ul.listings li {
+        height:auto;
+    }
+}
+@media only screen and (min-width:768px) {
+    ul.listings li .listing_image img{
+        width:100%;
+        height: auto;
+    }
+    ul.listings li h2, ul.listings li h2 a{
+        font-size:1.25rem;
+        line-height: 1.5rem;
+        color:#71757f;
+        font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+        font-weight:normal;
+        margin:.625rem 0;
+    }
+    .author_image {
+        float:left;
+        margin-right:10px;
+    }
+    .list_author {
+        float:left;
+        font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+        font-size:.75em;
+        padding-top:20px;
+    }
+    .list_author a {
+        text-decoration: none;
+        color:#71757f;
+    }
+    .listing_image {
+        margin-bottom:10px;
+    }
+}
+@media only screen and (min-width: 960px){
+    #talos_main_image {
+        height:320px;
+        padding-top:150px;
+        overflow:hidden;
+    }
+    #talos_heading h1 {
+        color:#fff;
+        font-size:3rem;
+    }
+    #talos_heading p {
+        font-size:1.4rem;
+        margin-top:3rem;
+    }
+    ul.listings li .listing_image img{
+        width:100%;
+        height: auto;
+    }
+    ul.listings li h2, ul.listings li h2 a{
+        font-size:1.25rem;
+        line-height: 1.5rem;
+        color:#71757f;
+        font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+        font-weight:normal;
+        margin:.625rem 0;
+    }
+    .author_image {
+        float:left;
+        margin-right:10px;
+    }
+    .list_author {
+        float:left;
+        font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+        font-size:.75rem;
+        padding-top:15px;
+    }
+    .list_author a {
+        text-decoration: none;
+        color:#71757f;
+    }
+    .listing_image {
+        margin-bottom:10px;
+    }
+    ul.listings li {
+    }
+}
+ul.tsm-tabs {
+    margin: 0 0 -2px 0;
+    overflow: hidden;
+}
+ul.tsm-tabs li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+ul.tsm-tabs li a {
+    display: block;
+    color: #71757f;
+    padding: 10px 0;
+    font-size:.875rem;
+    border: none;
+    border-bottom: 0 none;
+    text-decoration: none;
+    outline: none;
+    font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+ul.tsm-tabs li a:hover {
+    color: #888;
+}
+ul.tsm-tabs li.ui-tabs-active a {
+    background: #fff;
+    padding-bottom: 12px;
+    border-bottom:3px solid #0096d6;
+}
+.tsm-tab-content {
+    padding: 0px;
+    padding-top:20px;
+    border: none;
+    overflow: hidden;
+}
+/*normal layout*/
+  .results{
+      margin-bottom:2rem;
+  }
+.breadcrumb a{
+    color:#71757f;
+}
+ul#search_results {
+    list-style: none;
+    padding-bottom:2rem;
+    border-bottom:1px solid #71757f;
+    margin-bottom:1.25rem;
+}
+ul#search_results li {
+    padding-top:2rem;
+    padding-bottom:2rem;
+    border-top:1px solid #71757f;
+}
+.post_image {
+    float: left;
+    width:32%;
+}
+.post_image img {
+    width:100%;
+    height: auto;
+}
+.post_info {
+    float: left;
+    width:65%;
+    margin-left:2%;
+}
+ul#search_results li h2 a {
+    line-height:1.25rem;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight:normal;
+    margin-top:0px;
+}
+.pagination {
+    margin:0 auto;
+    text-align: center;
+    font-size:.875rem;
+    margin-bottom:2rem;
+}
+.pagination a, .pagination span.current {
+    padding: 0 10px;
+}
+.pagination a.page_last {
+    color: #0096d5;
+    font-family:"CiscoSansTTBold","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+.pagination span.current {
+    color: #0096d5;
+    padding-bottom:.25rem;
+    border-bottom:3px solid #0096d5;
+    font-family:"CiscoSansTTBold","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+.pagination a {
+    color:#71757f;
+}
+@media only screen and (max-width: 599px){
+    .post_image {
+        display:none;
+    }
+    .post_info {
+        width: 100%;
+        margin-left:0;
+    }
+}
+ul.listings li ul.tagged {
+    list-style: none;
+    overflow: hidden;
+}
+ul.listings li ul.tagged li {
+    float:left;
+    margin-right:10px;
+    margin-bottom:.625rem;
+    padding-top:10px;
+    width:auto;
+    height:auto;
+}
+a.post_tags {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#dbdbdb;
+    padding:6px;
+    font-size:.75rem;
+    color:#71757f;
+}

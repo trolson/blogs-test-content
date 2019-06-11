@@ -1,0 +1,182 @@
+#article_post {
+    padding: 0px;
+}
+#article_post h1 {
+    font-size: 2.125rem;
+    line-height: 2rem;
+    color: #71757f;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+}
+.breadcrumb {
+    font-size: .625rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.breadcrumb a {
+    color: #71757f;
+}
+#article_post .list_author {
+    padding-top: 10px;
+    float: left;
+}
+.author_big_photo {
+    float: left;
+    width: 150px;
+}
+.author_big_photo img {
+    width: 150px;
+    height: 150px
+}
+#author_content {
+    margin-left: 160px;
+    overflow: auto;
+}
+.user_title p {
+    font-size: .875rem;
+}
+.author_title {
+    font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+#author_description {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 1.125rem 0;
+}
+#search_content h1 {
+    font-size: 1.825rem;
+    line-height: 1.825rem;
+    color: #71757f;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+ul#search_results {
+    list-style: none;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #71757f;
+    margin-bottom: 1.25rem;
+}
+ul#search_results li {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #71757f;
+}
+.post_image {
+    float: left;
+    width: 32%;
+}
+.post_category {
+    font-size: .875rem;
+    line-height: 1rem;
+    color: #0096d5;
+    font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+/*changed*/
+.post_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.post_info {
+    float: left;
+    width: 65%;
+    margin-left: 2%;
+}
+.post_info p {
+    font-size: .875rem;
+}
+ul#search_results li h2 a, h2 {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+    color: #71757f;
+    padding: 5px 0;
+}
+.pagination {
+    margin: 0 auto;
+    text-align: center;
+    font-size: .875rem;
+    margin-bottom: 2rem;
+}
+.pagination a, .pagination span.current {
+    padding: 0 10px;
+}
+.pagination a.page_last {
+    color: #0096d5;
+    font-family: "CiscoSansTTBold","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+.pagination span.current {
+    color: #0096d5;
+    padding-bottom: .25rem;
+    border-bottom: 3px solid #0096d5;
+    font-family: "CiscoSansTTBold","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+.pagination a {
+    color: #71757f;
+}
+#author_links a {
+    margin-right: 10px;
+}
+#author_links {
+    margin-bottom: 5px;
+}
+#author_content h1 {
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+#author_content p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+#author_content .nitro_badge {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 599px) {
+    .breadcrumb {
+        display:none;
+    }
+    .post_image {
+        display: none;
+    }
+    .post_info {
+        width: 100%;
+        margin-left: 0;
+    }
+    .author_big_photo {
+        float: none;
+        width: 150px;
+        margin: 0 auto;
+    }
+    #author_content {
+        margin-left: 0px;
+        overflow: auto;
+    }
+    .user_title {
+        font-size: 12px;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    #author_rewards {
+        text-align: center;
+    }
+    #author_rewards ul.nitro_console_badge_bio {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #author_rewards ul.nitro_console_badge_bio li {
+        display: inline-block;
+    }
+    #author_links {
+        text-align: center;
+    }
+}

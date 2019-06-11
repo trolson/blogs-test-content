@@ -1,0 +1,101 @@
+#main_content{
+    max-width:1004px;
+    padding:10px;
+    margin:0 auto;
+    padding-top:0px;
+    margin-top:0;
+    font-family: "CiscoSansTTExtraLight","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    font-size:.875rem;
+}
+ul.tsm-tabs {
+    margin: 0 0 -2px 0;
+    overflow: hidden;
+}
+ul.tsm-tabs li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+ul.tsm-tabs li a {
+    display: block;
+    color: #71757f;
+    padding: 10px 0;
+    font-size:.875rem;
+    border: none;
+    border-bottom: 0 none;
+    text-decoration: none;
+    outline: none;
+    font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+}
+ul.tsm-tabs li a:hover {
+    color: #888;
+}
+ul.tsm-tabs li.ui-tabs-active a {
+    background: #fff;
+    padding-bottom: 12px;
+    border-bottom:3px solid #0096d6;
+}
+.tsm-tab-content {
+    padding: 0px;
+    padding-top:20px;
+    border: none;
+    overflow: hidden;
+}
+#engagement_scores {
+    list-style:none;
+    border:2px solid #eee;
+}
+#engagement_scores li {
+    padding:10px;
+}
+#engagement_scores li.even {
+    background:#eee;
+}
+.engage_image {
+    float:left;
+    margin-right:10px;
+}
+.levelText {
+    float:left;
+    width:200px;
+    font-weight:bold;
+    padding-top:15px;
+}
+.engage_image img {
+    padding-top:5px;
+}
+.engage_points {
+    float:left;
+    padding-top:15px;
+}
+.engagement_header {
+    background:#ccc;
+    font-weight:bold;
+    padding:10px;
+}
+.engage_left {
+    float:left;
+    width:250px;
+}
+.engage_right {
+    float:left;
+}
+dt {
+    font-family: "CiscoSansTTRegular","HelveticaNeue-Light","Helvetica Neue Light",HelveticaNeueLight,HelveticaNeue,Helvetica,Arial,"Nimbus Sans L",sans-serif;
+    margin-bottom:10px;
+    font-size:1rem;
+}
+dd {
+    margin-bottom:10px;
+    font-size:1rem;
+}
+#reputations {
+    text-align:center;
+    list-style:none;
+}
+#reputations li{
+    float:left;
+    display:block;
+    width:37px;
+    height:55px;
+    margin-right:40px;
+}
